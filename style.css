@@ -1,0 +1,92 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Container Styles */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 7%;
+  padding-left: 16%;
+  background: linear-gradient(135deg, #3e658e, #89e6ad);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.container h1 {
+    font-size: 2.4rem;
+    color: white;
+}
+
+.container h1 span {
+    margin-left: 10px;
+    color: #ffff76;
+}
+
+/* Input Box Styles */
+
+.input-box {
+    background-color: rgba(125, 134, 161, 0.5);
+    max-width: 500px;
+    padding: 18px 14px;
+    border-radius: 4px;
+    display: flex;
+    gap: 5px;
+    margin-top: 7px;
+    position: relative;
+}
+
+#date {
+    flex: 1;
+    padding: 7px 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+#btn {
+    background-color: rgb(248, 189, 79);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    color: rgb(12, 22, 24);
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+#btn:active{
+    background-color: rgb(255, 199, 90);
+}
+
+.input-box input::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 320px;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 20px;
+    cursor: pointer;
+}
+
+/* Age Result Styles */
+
+#result, .edad{
+    font-size: 1.5rem;
+    margin: 10px 10px 0;
+    font-weight: 400;
+}
+
+#result span, .edad span {
+    color: #ffff76;
+    font-size: 1.9rem;
+}
+
